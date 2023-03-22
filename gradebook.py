@@ -30,7 +30,8 @@ class Person:
 class Instructor(Person):
     def _init__(self, first_name, last_name, date_of_birth, instructor_id):
         self.instructor_id = f'Instructor{instructor_id}{UUID()}'
-        super.__init__(first_name,last_name,date_of_birth)
+        super.__init__(first_name, last_name, date_of_birth)
+
 
 class Student(Person):
 
@@ -38,13 +39,16 @@ class Student(Person):
         super().__init__(first_name, last_name, date_of_birth)
         self.student_id = f'Student{student_id}{UUID()}'
 
+
 class ZipCodeStudent(Student):
     def __int__(self, first_name, last_name, date_of_birth):
-        super().__int__(first_name,last_name,date_of_birth)
+        super().__int__(first_name, last_name, date_of_birth)
+
 
 class HighSchoolStudents(Student):
     def __int__(self, first_name, last_name, date_of_birth):
         super().__int__(first_name, last_name, date_of_birth)
+
 
 class ClassRoom:
 
