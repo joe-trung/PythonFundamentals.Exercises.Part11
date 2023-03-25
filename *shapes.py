@@ -17,7 +17,7 @@ class Square(Rectangle):
         super().__init__(side, side)
 
 
-rect = Rectangle(3,7)
+rect = Rectangle(3,  7)
 print(rect.perimeter_calc())
 print(rect.area_calc())
 
